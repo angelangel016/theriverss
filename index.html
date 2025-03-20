@@ -1,0 +1,678 @@
+<html>
+    <head>
+        
+    
+        
+        <title>НАЧАЛО - THE RIVER</title>
+    
+        
+    </head>
+    <style>
+.empty-flex{
+            visibility:hidden; Overflow:hidden;
+        }
+        .footer {
+    background-color: rgb(57, 67, 112);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: white;
+}
+
+.quote h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info p:first-child {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+
+        .nav-empty {
+
+padding-top: 1.042vw;
+height: 150;
+
+}
+
+
+
+        body {
+
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+background-image:url(img/homebg.jpg);
+background-position-y: 0;   
+background-size:135.417vw;    }
+
+
+
+
+        .navbar-flex{
+            Overflow:hidden;
+            background-color: rgba(255, 240, 249, 0.603);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.125vw;
+            width: 30%;
+            margin-left: 35%;
+            border-radius:1.563vw;
+            -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+            padding-left: 0.26vw;
+            padding-right: 0.26vw;
+    
+            box-shadow: 0 0.417vw 0.833vw 0 rgba(0, 0, 0, 0.2), 0 0.313vw 1.042vw 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .navbar-flex >.logo{
+            position: absolute;
+            z-index: 2;
+            left: 0; Overflow:hidden;
+        }
+        .navbar{
+          
+            display: flex;
+            width: 100%;
+            gap: 1.5em;
+            height: 100%;
+            justify-content: center;
+            padding-bottom: 0.781vw;
+            padding-top: 0.781vw;
+            align-items: center; Overflow:hidden;
+            
+            
+        }
+        .navbar >div{
+            border-radius:1.563vw;
+            display: flex;
+         background-color: rgba(255, 255, 255, 0.856);
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0.417vw 0.833vw 0 rgba(0, 0, 0, 0.2), 0 0.313vw  1.042vw 0 rgba(0, 0, 0, 0.19);
+            width: 5.208vw;
+           transition: 0.5s ease-in-out; Overflow:hidden;
+           font-size: 0.8vw;
+           
+           
+          
+
+                }
+        .navbar >div:hover{
+            background-color: rgb(29, 29, 29);
+            color: rgb(255, 255, 255);
+            cursor: pointer; Overflow:hidden;
+            
+           
+        }
+
+        a {
+  text-decoration: none; Overflow:hidden;
+}
+
+a:link {color: black;}      /* unvisited link */
+       a:visited {color: black;}   /* visited link */
+       a:hover {color: rgb(255, 255, 255);}     /* mouse over link */
+       a:active {color: black;}    /* selected link */
+
+
+/* You can style your div here if needed */
+        .flex-dropdown {
+        background-color: rgba(255, 240, 249, 0.603);
+        border-radius: 30px;
+        width: 90vw;
+        height: 400px;
+        position: absolute;
+        z-index: 2;
+        margin-top: 500px;
+        flex-wrap: wrap;
+        left: calc(50% - 45vw);
+        opacity: 0;
+        display: none;
+        gap: 1em;
+        padding: 1em;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .dropdown:hover .flex-dropdown {
+        display: flex;
+        animation: anim-dropdown 0.7s forwards;
+    }
+
+    @keyframes anim-dropdown {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .flex-dropdown > div {
+        height: auto;
+        color:black;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        width: 18vw;
+        padding: 1em;
+        flex-grow: 1;
+    }
+
+    .empty-flex {
+        visibility: hidden;
+    }
+
+
+        .image-text img{
+
+          scale: 1.4;
+        }
+        .image-text{
+            width: 100%;
+            height: 300px;
+          background-color: transparent;
+           
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5rem;
+            font-size: 4rem;
+        }
+        .image-text > button{
+            width: 170px;
+            height: 70px;
+            background-color: transparent;
+            border: 3px solid black;
+            backdrop-filter: blur(50px);
+            font-size: 2rem;
+            transition: 0.5s ;
+       
+        }
+        .image-text > button:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .cards{
+          
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            background-image: url(img/background.jpg);
+            background-size: cover;
+            padding: 4em;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+        .cards > div{
+            border-radius: 30px;
+            width: 22vw;
+            background-color: red;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            color: white;
+           transition: 0.5s ease-in-out;
+           filter:grayscale(1);
+        }
+        .cards >div:hover{
+            filter:grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .card-1{
+            background-size: cover;
+            background-image:url(img/rafting.jpg);
+            
+        }
+
+        .card-2 {
+
+background-image: url(https://i.cbc.ca/1.4764103.1532699684!/fileImage/httpImage/canoeing.jpg);
+background-size: cover;
+        }
+
+        .card-3 {
+
+background-image: url(https://giftcometrue.com/cdn/shop/products/flight66688.jpg?v=1531999512);
+background-size: cover;
+
+        }
+
+        .card-4 {
+
+background-image: url(https://thetravelexpert.ie/wp-content/uploads/2021/01/Aqua-Marina_group_advallaround-scaled-e1600094223980-2048x666-1.jpg);
+background-size: cover;
+
+        }
+ 
+        
+hr {
+
+    border: 1px solid rgb(208, 225, 255);
+
+}
+
+        .text{
+       height: auto;
+         
+            flex-grow: 2;
+            width: 20%;
+            background-color: rgb(57, 67, 112);
+        border-radius: 30px;
+         
+            text-align: center;
+            word-spacing: 6px;
+        }
+
+        .text > h1{
+            text-align: center;
+
+        }
+        
+        
+        
+
+
+        .home-main img {
+        }
+
+        .home-main{
+            background-image: url(img/homebg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+         
+          
+
+            
+        }
+
+        .cards h1 {
+
+            -webkit-text-stroke: 2px black;
+            color: white;
+            padding-top: 0%;
+            font-weight: 1000;
+            font-size: 25;
+
+ 
+
+        }
+
+        .element2 {
+            background-size: 100% 100%;
+            background-image: url(img/VAC.jpg);
+
+            transition: 0.5s ease-in-out;
+           filter:grayscale(1);
+        
+        }
+
+
+       
+
+
+        .element3 {
+            background-size: 100% 100%;
+            background-image: url(img/TB.jpg);
+        
+        }
+
+        .element4 {
+            background-size: 100% 100%;
+            background-image: url(img/CC.jpg);
+        
+        }
+
+        .element5 {
+            background-size: 100% 100%;
+            background-image: url(img/P.jpg);
+        
+        }
+
+        .home {
+
+            background-color: rgb(14, 14, 14);
+            color: rgb(255, 255, 255);
+
+        }
+
+        
+        .flex-dropdown > div{
+            border-radius: 30px;
+            width: 50px;
+            background-color: red;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            color: white;
+           transition: 0.5s ease-in-out;
+           filter:grayscale(1);
+        }
+
+        .flex-dropdown >div:hover{
+            filter:grayscale(0);
+            cursor: pointer;
+            
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .flex-dropdown h1 {
+
+-webkit-text-stroke: 2px black;
+color: white;
+font-weight: 1000;
+
+
+}
+       
+a {
+  text-decoration: none;
+}
+
+a:link {color: black;}      /* unvisited link */
+       a:visited {color: black;}   /* visited link */
+       a:hover {color: rgb(255, 255, 255);}     /* mouse over link */
+       a:active {color: black;}    /* selected link */
+
+
+
+.content-1 {
+  background-color: rgb(57, 67, 112); /* Blueish white background */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+  display: flex; /* Enable flex layout */
+  align-items: center; /* Center content vertically */
+  height: 35%;
+
+}
+
+.content-1 img {
+  width: 300; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add spacing between image and text */
+  border-radius: 30px; /* Make image round */
+}
+
+.content-1 .text {
+  color: rgb(218, 231, 255);; /* White text */
+  font-size: 20; /* Adjust font size as needed */
+  font-weight: bold; /* Make text bold */
+  width: 100vw;
+
+
+}
+
+.content-1 h1 {
+  font-size: 60; /* Adjust heading font size as needed */
+  margin-bottom: 10px; /* Add margin below heading */
+}
+
+.content-1 p {
+  margin-bottom: 10px; /* Add margin below paragraphs */
+}
+
+.cards2 h1 {
+
+-webkit-text-stroke: 2px black;
+color: white;
+padding-top: 0%;
+font-weight: 1000;
+font-size: 25;
+}
+
+.cards2{
+          
+          width: 100vw;
+          height: 600px;
+          display: flex;
+          background-image: url(img/background.jpg);
+          background-size: cover;
+          padding: 4em;
+          gap: 1rem;
+          justify-content: center;
+      }
+      .cards2  div{
+          border-radius: 30px;
+          width: 22vw;
+          background-color: red;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          padding-top: 2rem;
+          color: white;
+         transition: 0.5s ease-in-out;
+         filter:grayscale(1);
+      }
+      .cards2 div:hover{
+          filter:grayscale(0);
+          cursor: pointer;
+          transform: scale(1.1);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .card2-1{
+          background-image: url(img/TB.jpg);
+          background-size: cover;
+          
+      }
+
+      .card2-2 {
+
+background-image: url(img/CC.jpg);
+background-size: cover;
+      }
+
+      .card2-3 {
+
+background-image: url(img/VAC.jpg);
+background-size: cover;
+text-align: center;
+
+      }
+
+      .card2-4 {
+
+background-image: url(img/P.jpg);
+background-size: cover;
+
+      }
+
+      hr {
+
+width: 10%;
+margin-left: 45%;
+
+      }
+
+    .text h1 {
+
+        color: rgb(221, 233, 255);
+        letter-spacing: 3px;
+
+    }
+
+    .text p {
+
+        color: rgb(206, 223, 255);
+        letter-spacing: 2px;
+    }
+
+    .Moto {
+
+        font-size: 40;
+    }
+    .link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+    <body>
+        <div class="main">
+            <div class="home-main">
+                <div class="nav-empty">
+
+                    <div class="navbar-flex">
+                        <div class="logo"></div>
+                        <div class="navbar">
+                            <div class="home" style="background-color: rgb(57, 67, 112);"><a>Начало</a></div>
+                            
+                            <div class="about"><a href="pages/zanas.html" >За нас</a></div>
+                            <div class="gallery"><a href="pages/gallery.html">Галерия</a></div>
+                            <div class="reservations"><a href="pages/reserv.html">Резервация</a></div>
+                
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            <div class="image-text">
+                
+                <img src="img/logo.svg">
+            
+            </div>
+        </div>
+            <div class="cards">
+                <div class="card-1">
+                     <h1>РАФТИНГ</h1> 
+                    <a href="pages/rafting.html" >
+                        <span class="link"></span>
+                    </a>
+                </div>
+                <div class="card-2"> <h1>КАНЬОИНГ</h1>
+                    <a href="pages/Каньоинг.html" >
+                        <span class="link"></span>
+                    </a></div>
+                <div class="card-3"> <h1>КАЯКИНГ</h1>
+                    <a href="pages/Каякинг.html" >
+                        <span class="link"></span>
+                    </a> </div>
+                <div class="card-4"> <h1>SUP</h1> 
+                    <a href="pages/SUP.html" >
+                        <span class="link"></span>
+                    </a></div>
+            </div>
+            <div class="content-1">
+                
+                <div class="text">
+                    <p> THE RIVER</p>
+                <hr>
+                <br> 
+                <div class="Moto">
+                    <p>"OPEN YOUR EYES, FEEL THE MAGIC!"</p>
+                </div>
+                    </p>
+                    <br>
+                                 
+
+                </div>
+            </div>
+            
+
+            <div class="cards2">
+               <div class="card2-1"><h1>ТИЙМБИЛДИНГ</h1>
+                    <a href="pdf/teambuilding.pdf" target="_blank">
+                        <span class="link"></span>
+                    </a>
+                </div>
+               <div class="card2-2"> <h1>ДЕТСКИ ЛАГЕРИ</h1> 
+                    <a href="pdf/detski lageri.pdf" target="_blank">
+                        <span class="link"></span>
+                    </a>
+                </div>
+               <div class="card2-3"> <h1>ПОЧИВКИ И БУНГАЛА</h1> 
+                    <a href="pdf/bungala.pdf" target="_blank">
+                        <span class="link"></span>
+                    </a>
+                </div>
+               <div class="card2-4"> 
+                <h1>ОФЕРТИ</h1> 
+                    <a href="pdf/оферти.pdf" target="_blank">
+                        <span class="link"></span>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="brand">
+                  <h2>T H E  &nbsp&nbsp&nbsp     R I V E R</h2>
+              </div>
+              <div class="quote">
+                  <h1>"OPEN YOUR EYES, FEEL THE MAGIC!"</h1>
+              </div>
+              
+              <div class="social-links">
+                  <a href="https://www.facebook.com/people/The-River/61555088834884/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                  <a href="https://www.instagram.com/the.river.rafting/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+              </div>
+          </div>
+      </footer>
+
+             </body>
+</html>
