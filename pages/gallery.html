@@ -1,0 +1,375 @@
+<html>
+    <head><title>ГАЛЕРИЯ SUP - THE RIVER</title></head>
+    <style>
+.footer {
+    background-color: rgb(57, 67, 112);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: white;
+}
+
+.quote h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info p:first-child {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nav-empty {
+        padding-top: 20px;
+        height: 150;
+        }   
+        .navbar-flex{
+            background-color: rgba(255, 240, 249, 0.603);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 30%;
+            margin-left: 35%;
+            border-radius:30px;
+            -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+            padding-left: 5px;
+            padding-right: 5px;
+    
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        a {
+        text-decoration: none;
+        }
+
+        .navbar-flex{
+            Overflow:hidden;
+            background-color: rgba(255, 240, 249, 0.603);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.125vw;
+            width: 30%;
+            margin-left: 35%;
+            border-radius:1.563vw;
+            -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+            padding-left: 0.26vw;
+            padding-right: 0.26vw;
+    
+            box-shadow: 0 0.417vw 0.833vw 0 rgba(0, 0, 0, 0.2), 0 0.313vw 1.042vw 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .navbar-flex >.logo{
+            position: absolute;
+            z-index: 2;
+            left: 0; Overflow:hidden;
+        }
+        .navbar{
+          
+            display: flex;
+            width: 100%;
+            gap: 1.5em;
+            height: 100%;
+            justify-content: center;
+            padding-bottom: 0.781vw;
+            padding-top: 0.781vw;
+            align-items: center; Overflow:hidden;
+            
+            
+        }
+        .navbar >div{
+            border-radius:1.563vw;
+            display: flex;
+         background-color: rgba(255, 255, 255, 0.856);
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0.417vw 0.833vw 0 rgba(0, 0, 0, 0.2), 0 0.313vw  1.042vw 0 rgba(0, 0, 0, 0.19);
+            width: 5.208vw;
+           transition: 0.5s ease-in-out; Overflow:hidden;
+           font-size: 0.8vw;
+           
+           
+          
+
+                }
+        .navbar >div:hover{
+            background-color: rgb(29, 29, 29);
+            color: rgb(255, 255, 255);
+            cursor: pointer; Overflow:hidden;
+            
+           
+        }
+        a:link {color: black;}      /* unvisited link */
+       a:visited {color: black;}   /* visited link */
+       a:hover {color: rgb(255, 255, 255);}     /* mouse over link */
+       a:active {color: black;}    /* selected link */
+
+
+        .dropdown:hover .flex-dropdown{
+            display: flex;
+            animation: anim-dropdown 0.7s forwards;
+            
+
+        }
+        @keyframes anim-dropdown {
+            from{
+                opacity: 0;
+            }to{
+                opacity: 100;
+            }
+        }
+        .flex-dropdown >div{
+            height:auto;
+            background-color: red;
+            width:18vw;
+            padding: 1em;
+            flex-grow: 1;
+        }
+        .empty-flex{
+            visibility:hidden;
+        }
+        .image >img{
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+            border-radius: 30px;
+        }
+        .parent-container {
+        width: 100%;
+        justify-content: center;
+        gap: 30px 30px;
+        }
+        .child-container {
+        width: 30%;
+        height: auto;
+        gap: 30px 30px;
+        flex-direction: column;
+        }
+        .child-container img {
+        transition: all 1s ease-in-out 0s;
+        box-shadow: 2px 2px 20px gray, inset 2px 2px 10px lightgray;
+        border-radius: 30px;
+        }
+        .child-container img:hover {
+        box-shadow: 4px 4px 25px black, inset 2px 2px 2px 10px rgb(0, 0, 20);
+        border-radius: 30px;
+        
+        
+        }
+        .child-container, .parent-container{
+            display: flex;
+            border-radius: 30px;
+        }
+        .parent-container{
+            margin-bottom: 50px;
+            border-radius: 30px;
+        }
+        .gallery-text{
+            display: flex;
+            width: 100vw;
+            height: 250px;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: rgb(57, 67, 112);
+            
+        }
+
+        
+        @media screen and (max-width: 1300px) {
+
+          .nav-empty {
+        padding-top: 20px;
+        height: 150;
+        }   
+        .navbar-flex{
+            background-color: rgba(255, 240, 249, 0.603);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 30%;
+            margin-left: 35%;
+            border-radius:30px;
+            -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+            padding-left: 5px;
+            padding-right: 5px;
+    
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        a {
+        text-decoration: none;
+        }
+
+        .navbar-flex{
+            Overflow:hidden;
+            background-color: rgba(255, 240, 249, 0.603);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.125vw;
+            width: 30%;
+            margin-left: 35%;
+            border-radius:1.563vw;
+            -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+            padding-left: 0.26vw;
+            padding-right: 0.26vw;
+    
+            box-shadow: 0 0.417vw 0.833vw 0 rgba(0, 0, 0, 0.2), 0 0.313vw 1.042vw 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .navbar-flex >.logo{
+            position: absolute;
+            z-index: 2;
+            left: 0; Overflow:hidden;
+        }
+        .navbar{
+          
+            display: flex;
+            width: 100%;
+            gap: 1.5em;
+            height: 100%;
+            justify-content: center;
+            padding-bottom: 0.781vw;
+            padding-top: 0.781vw;
+            align-items: center; Overflow:hidden;
+            
+            
+        }
+        .navbar >div{
+            border-radius:1.563vw;
+            display: flex;
+         background-color: rgba(255, 255, 255, 0.856);
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0.417vw 0.833vw 0 rgba(0, 0, 0, 0.2), 0 0.313vw  1.042vw 0 rgba(0, 0, 0, 0.19);
+            width: 5.208vw;
+           transition: 0.5s ease-in-out; Overflow:hidden;
+           font-size: 0.8vw;
+           
+           
+          
+
+                }
+        .navbar >div:hover{
+            background-color: rgb(29, 29, 29);
+            color: rgb(255, 255, 255);
+            cursor: pointer; Overflow:hidden;
+            
+           
+        }
+
+        }
+    
+    </style>
+    <body>
+        <div class="main">
+            <div class="home-main">
+                <div class="nav-empty">
+            <div class="navbar-flex">
+                <div class="logo"></div>
+                <div class="navbar">
+                    <div class="home" ><a href="../index.html">Начало</a></div>
+                    
+                    <div class="about"><a href="zanas.html">За нас</a></div>
+                    <div class="gallery" style="background-color:rgb(57, 67, 112);"><a href="gallery.html" style="color: rgb(255, 255, 255);">Галерия</a></div>
+                    <div class="reservations"><a href="reserv.html">Резервация</a></div>
+        
+                </div>
+            </div>
+        </div>
+            <div class="gallery-text"><h1>ПОДБРАНИ МОМЕНТИ ОТ THE RIVER</h1></div>
+            <div class="parent-container">
+                <div class="child-container" id="one">
+                  <img src="https://bestvancouvertours.com/images/rafting-gallery/happy-group-after-rafting-adventure.jpg" width="100%" height="auto">
+                  <iframe width="100%" height="20% " src="https://www.youtube.com/embed/V49gpkMeFUY" title="Рафтинг по река Струма" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <img src="https://enrgkayaking.com/wp-content/uploads/2019/05/50283408_10156284811053403_4092424068614062080_n.jpg" width="100%" height="auto">
+                  <img src="https://www.imagineecuador.com/wp-content/uploads/2021/10/Recurso-111-3.png" width="100%" height="auto">
+                  <img src="https://d1n59xpaprvtgj.cloudfront.net/media2/images/crop_800_600/staff/andre-raft.jpg" width="100%" height="auto">
+                </div>
+                  <div class="child-container" id="two">
+                     <img src="https://www.jasper.travel/media/images/SunwaptaRiver-MaligneRaftingAdventures-CR.he.height-1500.jpg" width="100%" height="auto">
+                     <iframe width="100%" height="25%" src="https://www.youtube.com/embed/28wbI73IVvQ" title="White Water Rafting   Victoria Falls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <img src="https://www.campcobbossee.com/wordpress/wp-content/uploads/2016/12/groundsTrips2-1.jpg" width="100%" height="auto">
+                    
+                                                          
+                </div>
+                    <div class="child-container" id="three">
+                  <img src="https://static.enjoylehladakh.com/kolkata-to-leh-ladakh-adventure-package-5-nights-6-days-by-flight.jpg" width="100%" height="auto">
+                      <img src="https://cdn.projectexpedition.com/photos/93565touractivity5a60a9a4e01798e8668b4567_723x542_sized.jpg" width="100%"  height="auto">
+                      <img src="https://i.pinimg.com/originals/94/00/80/940080e7681bf2f77ad1153f288e10f2.jpg" width="100%"  height="auto">
+                      <img src="https://th.bing.com/th/id/OIP.aDUmSaB8eQRzqCkHIuip0wHaE6?w=1024&h=680&rs=1&pid=ImgDetMain" width="100%"  height="auto">
+                      <iframe width="100%" height="20%" src="https://www.youtube.com/embed/tBC5k9kyMnk" title="Excellent Royal Gorge whitewater rafting in Colorado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      
+                      
+                      
+                </div>
+                </div>
+        </div>
+       
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="brand">
+                  <h2>T H E  &nbsp&nbsp&nbsp     R I V E R</h2>
+              </div>
+              <div class="quote">
+                  <h1>"OPEN YOUR EYES, FEEL THE MAGIC!"</h1>
+              </div>
+              
+              <div class="social-links">
+                  <a href="https://www.facebook.com/people/The-River/61555088834884/" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+                  <a href="https://www.instagram.com/the.river.rafting/" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+              </div>
+          </div>
+      </footer>  </body>
+</html>
